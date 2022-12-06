@@ -1,0 +1,48 @@
+
+h1{
+    margin: 12px ;
+    text-align: center;
+}
+.container{
+    min-height: 80vh;
+    margin: 18px 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.myForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.myInput{
+    display: block;
+    width: 40%;
+    margin: 8px;
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.btn{
+    padding: 8px 10px;
+    font-size: 18px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+footer{
+    height: 70px;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
