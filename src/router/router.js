@@ -88,9 +88,6 @@ router.post('/login', async (req, res) => {
         httpOnly: true
     })
 
-    
-
-
     if (verifypassword) {
       res.render('index')
     }
@@ -102,6 +99,20 @@ router.post('/login', async (req, res) => {
   }
 
 })
+
+router.get('/profile',auth,(req,res)=>{
+    res.send({
+    "firstname":req.user.firstname,
+    "lastname":req.user.lastname,
+    "email":req.user.email,
+    "phone":req.user.phone,
+    "gender":req.user.gender,
+    "age":req.user.age
+  })
+})
+
+
+
 
 router.get('*', (req, res) => {
   res.status(404).render(`<h1>page connot be found</h1>`)
